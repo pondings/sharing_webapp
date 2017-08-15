@@ -1,3 +1,82 @@
-<p>
-  project works!
-</p>
+<div class="col m12">
+  <h3>My Project List</h3>
+  <div class="col m12" style="min-height: 5vh"></div>
+  <mz-collapsible [mode]="'accordion'" [onClose]="closeFunctionCallback" [onOpen]="openFunctionCallback" [popout]="false">
+    <mz-collapsible-item>
+      <mz-collapsible-item-header>
+        <i mz-icon-mdi [icon]="'folder-outline'"></i> Sattaporn Application API
+      </mz-collapsible-item-header>
+      <mz-collapsible-item-body>
+        <div class="col m12">
+          <b>Programming language : </b> Java
+        </div>
+        <div class="col m12">
+          <b>Framework : </b> Spring-boot
+        </div>
+        <div class="col m12">
+          <b>Repository : </b> CRUD-Repository
+        </div>
+        <div class="col m12">
+          <b>Software architectural pattern : </b> MVC+S
+        </div>
+        <div class="col m12">
+          <b>Demo : </b> <a href="http://www.sattaporn-api.pondingz.com" target="_blank">Sattaporn-API</a>
+        </div>
+        <div class="col m12">
+          <b>Github : </b> <a href="https://github.com/pondings/sattaporn_spring" target="_blank">Github</a>
+        </div>
+        <br/>
+        <div class="col m12">
+          <b>Desc : </b> เป็น API ที่ถูก Sattaporn Application Webapp เรียกใช้งานในการทำ Transaction ต่างๆ
+        </div>
+      </mz-collapsible-item-body>
+    </mz-collapsible-item>
+    <mz-collapsible-item>
+      <mz-collapsible-item-header>
+        <i mz-icon-mdi [icon]="'folder-outline'"></i> Sattaporn Application Webapp
+      </mz-collapsible-item-header>
+      <mz-collapsible-item-body>
+        <div class="col m12">
+          <b>Programming language : </b> JavaScript
+        </div>
+        <div class="col m12">
+          <b>Framework : </b> Angular 4
+        </div>
+        <div class="col m12">
+          <b>Demo : </b> <a href="http://www.sattaporn.pondingz.com" target="_blank">Sattaporm webapp</a>
+        </div>
+        <div class="col m12">
+          <b>Github : </b> <a href="https://github.com/pondings/sattaporn_webapp" target="_blank">Github</a>
+        </div>
+        <br/>
+        <div class="col m12">
+          <b>Desc : </b> เป็น Project ที่สร้างขึ้นมาให้พ่อใช้งาน ในการบันทึกข้อมูลลูกค้าที่เขามีอยู่ และบันทึก Document ต่างๆของลูกค้าคนนั้นๆ
+          เก็บไว้ใน Computer
+        </div>
+      </mz-collapsible-item-body>
+    </mz-collapsible-item>
+    <mz-collapsible-item>
+      <mz-collapsible-item-header>
+        <i mz-icon-mdi [icon]="'folder-outline'"></i> Sharing Project Webapp
+      </mz-collapsible-item-header>
+      <mz-collapsible-item-body>
+        <div class="col m12">
+          <b>Programming language : </b> JavaScript
+        </div>
+        <div class="col m12">
+          <b>Framework : </b> Angular 4
+        </div>
+        <div class="col m12">
+          <b>Demo : </b> <a href="http://www.pondingz.com" target="_blank">Sharing project</a>
+        </div>
+        <div class="col m12">
+          <b>Github : </b> <a href="https://github.com/pondings/sharing_webapp" target="_blank">Github</a>
+        </div>
+        <br/>
+        <div class="col m12">
+          <b>Desc : </b> Project นี้ถูกสร้างขึ้นมา เพื่อเป็น Portfolio ของตัวเองและ Share ความรู้ เทคนิค และสิ่งต่างๆที่ เจ้าของ web รู้ให้กับคนอื่นๆ
+        </div>
+      </mz-collapsible-item-body>
+    </mz-collapsible-item>
+  </mz-collapsible>
+</div>
