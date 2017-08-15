@@ -1,3 +1,5 @@
+import { SharingModule } from './sharing/sharing.module';
+import { ProfileModule } from './profile/profile.module';
 import { ProjectModule } from './project/project.module';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
@@ -26,6 +28,8 @@ import { MaterializeModule } from 'ng2-materialize';
     CoreModule,
     SharedModule,
     HomeModule,
+    ProfileModule,
+    SharingModule,
     ProjectModule,
     MaterializeModule.forRoot(),
   ],
