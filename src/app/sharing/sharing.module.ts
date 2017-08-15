@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,7 +8,8 @@ import { SharingComponent } from './sharing.component';
 @NgModule({
   imports: [
     CommonModule,
-    SharingRoutingModule
+    SharingRoutingModule,
+    RouterModule
   ],
   declarations: [SharingComponent]
 })
