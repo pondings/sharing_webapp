@@ -1,3 +1,19 @@
-<p>
-  side-nav works!
-</p>
+<mz-sidenav
+  [id]="'sidenav'"
+  [collapseButtonId]="'btn-sidenav'">
+  <mz-sidenav-header>
+    Pondingz
+  </mz-sidenav-header>
+  <mz-sidenav-subheader>Menus</mz-sidenav-subheader>
+  <mz-sidenav-link>
+    <a routerLink="profile" class="waves-effect"><i mz-icon-mdi [icon]="'account-card-details'"></i> Profile</a>
+  </mz-sidenav-link>
+  <mz-sidenav-divider></mz-sidenav-divider>
+  <mz-sidenav-link>
+    <a routerLink="project" class="waves-effect"><i mz-icon-mdi [icon]="'file-document-box'"></i> Project</a>
+  </mz-sidenav-link>
+  <mz-sidenav-divider></mz-sidenav-divider>
+  <mz-sidenav-link>
+    <a href="#" class="waves-effect"><i mz-icon-mdi [icon]="'share-variant'"></i> Sharing</a>
+  </mz-sidenav-link>
+</mz-sidenav>
