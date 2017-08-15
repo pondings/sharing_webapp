@@ -1,3 +1,5 @@
+import { ProjectModule } from './project/project.module';
+import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,6 +25,8 @@ import { MaterializeModule } from 'ng2-materialize';
     BrowserAnimationsModule,
     CoreModule,
     SharedModule,
+    HomeModule,
+    ProjectModule,
     MaterializeModule.forRoot(),
   ],
   providers: [],
