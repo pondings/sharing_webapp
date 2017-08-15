@@ -1,8 +1,17 @@
 <mz-navbar>
-  <a href="#" class="brand-logo">Pondingz</a>
+  <a routerLink="" class="brand-logo">Pondingz</a>
+  <a mz-button [flat]="true" href="#" data-activates="mobile-demo" [large]="true" 
+    class="button-collapse btn-transparent" (click)="btnCollapseClicked()">
+    <i mz-icon-mdi [icon]="'menu'"></i>
+  </a>
   <mz-navbar-item-container [align]="'right'">
-    <mz-navbar-item><a href="#">Sass</a></mz-navbar-item>
-    <mz-navbar-item><a href="#">Components</a></mz-navbar-item>
-    <mz-navbar-item><a routerLink="js">JavaScript</a></mz-navbar-item>
+    <mz-navbar-item><a routerLink="js">Profile</a></mz-navbar-item>
+    <mz-navbar-item><a routerLink="project">Project</a></mz-navbar-item>
+    <mz-navbar-item><a routerLink="js">Sharing</a></mz-navbar-item>
   </mz-navbar-item-container>
 </mz-navbar>
+
+<app-side-nav></app-side-nav>
+
+<button mz-button [id]="'btn-sidenav'" [flat]="true" style="height: 0px" #openSideNavBtn></button>
+<div style="min-height: 5vh"></div>
