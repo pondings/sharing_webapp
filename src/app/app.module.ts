@@ -1,3 +1,6 @@
+import { ProjectService } from './shared/services/project.service';
+import { HttpModule } from '@angular/http';
+import { CommonService } from './shared/services/common.service';
 import { SharingModule } from './sharing/sharing.module';
 import { ProfileModule } from './profile/profile.module';
 import { ProjectModule } from './project/project.module';
@@ -23,6 +26,7 @@ import { MaterializeModule } from 'ng2-materialize';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CoreModule,
@@ -33,7 +37,7 @@ import { MaterializeModule } from 'ng2-materialize';
     ProjectModule,
     MaterializeModule.forRoot(),
   ],
-  providers: [],
+  providers: [CommonService, ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
