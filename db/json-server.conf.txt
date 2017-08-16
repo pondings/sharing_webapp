@@ -1,0 +1,1 @@
+nohup json-server db.json </dev/null &
