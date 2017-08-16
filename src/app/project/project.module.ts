@@ -8,6 +8,7 @@ import { ProjectComponent } from './project.component';
  * Third-Party
  */
 import { MaterializeModule } from 'ng2-materialize';
+import { ProjectListComponent } from './project-list/project-list.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { MaterializeModule } from 'ng2-materialize';
     ProjectRoutingModule,
     MaterializeModule
   ],
-  declarations: [ProjectComponent]
+  declarations: [ProjectComponent, ProjectListComponent]
 })
 export class ProjectModule { }
